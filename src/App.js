@@ -9,7 +9,7 @@ import "./_variables.scss";
 import "./App.scss";
 import "./fonts/fontFace.css";
 // import { Naviagtion } from "./Naviagtion/navigation";
-// test git 2
+// test git 3
 import { Router } from "./router/router";
 
 export default function App() {
