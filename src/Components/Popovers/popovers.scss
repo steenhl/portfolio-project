@@ -1,0 +1,23 @@
+.overlay-trigger {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	h2 {
+		font-size: 18px;
+	}
+	button {
+		display: block;
+	}
+}
+.tooltip-section {
+	h2 {
+		font-size: 22px;
+	}
+	h3 {
+		font-size: 18px;
+		font-weight: 700;
+	}
+	p {
+		font-size: 16px;
+	}
+}

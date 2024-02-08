@@ -1,0 +1,9 @@
+<h3>Komponentbaseret</h3>
+<p>React er et komponentbaseret JavaScript-bibliotek til opbygning af brugergrænseflader</p>
+
+<p>Med React kan du opbygge indkapslede komponenter, der styrer deres egen tilstand.</p> 
+<p>Hver enkelt komponent kan genbruges i andre komponenter og danne mere komplekse brugergrænseflader.</p>
+<p>Hvis de underliggende data for et komponent ændres, vil React opdatere det pågældende komponent og afspejle denne ændring i browseren.</p>
+
+
+

@@ -1,0 +1,45 @@
+@import "../../variables";
+
+.rm-wrapper {
+	&__header {
+		margin-top: $padding-top-var;
+		background-color: #ab7e12;
+		background-color: #f0f6ff;
+		color: #000000;
+		letter-spacing: 1.06px;
+		h1 {
+			margin-top: 15px;
+		}
+
+		h1,
+		h2 {
+			font-family: "Days One", Arial, sans-serif;
+			text-align: center;
+		}
+	}
+	.list-navigation {
+		position: fixed;
+		bottom: 0;
+		// background-color: #ab7e12;
+		// background-color: #edf1f8;
+		// background-color: #010910;
+		background-color: #f0f6ff;
+	}
+	.rm-mobil,
+	.rm-disktop {
+		margin-bottom: 55px;
+	}
+	.rm-disktop.hide {
+		display: none;
+	}
+	.rm-mobil.hide {
+		display: none;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.rm-wrapper {
+		&__header {
+			padding-top: 0px;
+		}
+	}
+}

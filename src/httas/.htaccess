@@ -1,0 +1,29 @@
+# Downgrade PHP (Surftown) - remove this line if you want newer and faster
+AddType application/x-httpd-php-old .php
+
+# Default indexes (Surftown)
+DirectoryIndex index.html index.htm index.php index.php3 index.shtml index.wml index.pl index.cgi index.php4 index.phtml index.swf default.html default.htm default.php default.php3 default.shtml default.wml default.pl default.cgi default.php4 default.phtml default.swf hostedby.php
+
+#RewriteEngine On
+#RewriteBase /wi/
+#RewriteRule videos/([A-Za-z0-9_]*) 		index.php?page=$1 [L]
+#RewriteRule (forside) index.php?page=$1 [L]
+
+#AddType application/x-httpd-php-old php
+#php_value max_execution_time 1320
+
+php_value session.gc_maxlifetime 10800
+php_value max_input_time         10800
+php_value max_execution_time     1320
+php_value upload_max_filesize    150M
+php_value post_max_size          170M
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>

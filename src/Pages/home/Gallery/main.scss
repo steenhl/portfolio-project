@@ -1,0 +1,39 @@
+.teaser-gallery {
+	position: relative;
+	width: 100%;
+	figure {
+		position: absolute;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		//transition: width 0.5s;
+		img {
+			display: block;
+		}
+		svg {
+			height: 100vh;
+		}
+	}
+
+	figure:nth-of-type(1) {
+		z-index: 4;
+		visibility: visible;
+	}
+}
+.mobil {
+	#teaser-gallery-likes {
+		&::after {
+			display: block;
+			content: "";
+			width: 100%;
+			padding-top: (1 / 1) * 100%;
+		}
+		figure {
+			width: 100%;
+			svg {
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+}

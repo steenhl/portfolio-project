@@ -1,0 +1,30 @@
+.header-intern-nav {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+
+	.pagination {
+		--bs-pagination-bg: rgb(255, 255, 255);
+		--bs-pagination-active-bg: #000000;
+		--bs-pagination-active-border-color: #faebd7;
+		--bs-pagination-color: #000000;
+
+		flex-direction: column;
+		.page-item:not(.active) {
+			display: none;
+		}
+		.break {
+			display: none;
+		}
+		.page-item.active {
+			text-align: center;
+		}
+	}
+}
+
+.list-navigation {
+	.pagination {
+		user-select: none;
+	}
+}

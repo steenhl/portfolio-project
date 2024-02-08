@@ -1,0 +1,116 @@
+// info panel slide out
+.panel-1 {
+	.info-wrapper {
+		z-index: 1;
+		&__firstbutton {
+			background-color: #944601;
+		}
+		&__sccondbutton {
+			position: absolute;
+			top: 7px;
+			right: 7px;
+		}
+		.collapse-horizontal {
+			position: absolute;
+			z-index: 100;
+			left: auto;
+			transform: translate(0%, -45px);
+			transition: 0.3s;
+		}
+	}
+	.info-wrapper {
+		.card-body {
+			max-width: 800px;
+
+			padding-top: 7px;
+			width: 60vw;
+			height: 70vh;
+			overflow-y: auto;
+			background-color: rgba(255, 252, 238, 0.9);
+			transition: background-color 1s;
+			&:hover {
+				background-color: rgba(255, 252, 238);
+			}
+
+			article {
+				padding: 0;
+				h2,
+				h3 {
+					color: #944601;
+				}
+				p {
+					color: black;
+					font-family: "SourceSansPro", Arial, Helvetica, sans-serif;
+					font-size: 14px;
+					margin-bottom: 8px;
+				}
+				li {
+					list-style-type: disc;
+					display: list-item;
+				}
+			}
+		}
+
+		.fade-background {
+			display: block;
+			width: 100vw;
+			height: 100vh;
+			position: absolute;
+			background-color: rgba(177, 177, 177);
+			z-index: 1;
+			top: 0;
+			left: 0;
+		}
+		.card-body {
+			overflow-y: auto;
+		}
+	}
+	.fade-background.hide {
+		width: 0;
+		height: 0;
+		position: relative;
+	}
+	.fade-background.collapsed {
+		width: 0;
+		height: 0;
+		position: relative;
+	}
+}
+@media only screen and (max-width: 710px) {
+	.panel-1 .info-wrapper .collapse-horizontal {
+		.card-body {
+			width: 85vw;
+		}
+	}
+}
+// @media only screen and (max-height: 710px) {
+@media only screen and (max-width: 765px) {
+	.panel-1 .info-wrapper .collapse-horizontal {
+		top: 86px;
+		left: 50%;
+		transform: translateX(-50%);
+		.card-body {
+			height: 70vh;
+			width: 85vw;
+			article p {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+// @media only screen and (max-height: 600x) {
+@media only screen and (max-height: 750px) {
+	.panel-1 .info-wrapper .collapse-horizontal {
+		top: 86px;
+		left: 50%;
+		transform: translateX(-50%);
+		.card-body {
+			height: 70vh;
+			width: 85vw;
+			article p {
+				font-size: 16px;
+			}
+		}
+	}
+}

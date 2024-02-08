@@ -1,0 +1,9 @@
+De flyvende og interaktive fugle i den første sektion er skabt ved hjælp en teknik som kaldes canvas.
+Canvas grafik skabes ved hjælp af programmeringssproget JavaScript og kan direkte ændres hvis der er brug for det.
+
+Fuglene i den første sektion interagerer med brugerens cursor og ændre fart og placering, hvilket viser styrken i denne teknik
+ 
+SVG-stjerner 
+I sektionen Rick and Morty animeres der 300 svg stjerner i baggrunden. 
+Når man tilføjer elementer til siden, skal browseren bruge kraft på at optegner det nye element. For at forhindre dette bruges en teknik ”document fragment” hvor vi oprette alle stjernerne på en gang op tilføjer dem samlet til siden
+

@@ -1,0 +1,18 @@
+.technology {
+	&--ul {
+		padding-left: 20px;
+	}
+	&--li {
+		font-size: 18px;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		line-height: 200%;
+		&.has-tooltip {
+			border-bottom: 1px solid var(--bs-gray-400);
+			padding-top: 12px;
+			padding-bottom: 8px;
+		}
+	}
+}

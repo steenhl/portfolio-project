@@ -1,0 +1,8 @@
+@font-face { font-family: 'SourceSansPro'; src: url('./SourceSansPro/SourceSansPro-Regular.ttf') format('truetype') }  
+@font-face { font-family: 'SourceSansProBold'; font-weight: bold; src: url('./SourceSansPro/SourceSansPro-Bold.ttf') format('truetype') }
+@font-face { font-family: 'lobster'; src: url('./lobster/Lobster-Regular.ttf') format('truetype') } 
+@font-face { font-family: "Days One"; src: url("./Days_One/DaysOne-Regular.ttf") format("truetype") }
+
+@font-face {font-family: RobotoRegular; src: url(./Roboto/Roboto-Regular.ttf) format("truetype");}
+@font-face {font-family: RobotoBold; src: url(./Roboto/Roboto-Bold.ttf) format("truetype");}
+@font-face {font-family: Roboto-Medium; src: url(./Roboto/Roboto-Medium.ttf) format("truetype");}

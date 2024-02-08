@@ -1,0 +1,245 @@
+body {
+	overflow-x: hidden;
+}
+#canvas-fireworks {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100vw;
+}
+.home-wrapper {
+	position: relative;
+
+	nav.internal-nav.front-page {
+		position: fixed;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 4px;
+		z-index: 1;
+		// background-color: rgb(142 169 191);
+		border-radius: 10px;
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-content: center;
+			list-style-type: none;
+			padding: 5px;
+			margin-bottom: 0;
+			width: 35px;
+			li:first-child {
+				color: white;
+			}
+			li {
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+			a {
+				display: block;
+				text-decoration: none;
+				color: black;
+				transition: 0.5s;
+				.internal-nav__span-circle {
+					display: block;
+					width: 16px;
+					height: 16px;
+					border-radius: 50%;
+					// background-color: currentColor;
+				}
+
+				.internal-nav__span-text {
+					display: none;
+				}
+
+				&.active {
+					color: rgb(237, 135, 1);
+				}
+				svg {
+					height: 100%;
+					width: 100%;
+				}
+				&.active {
+					svg {
+						height: 110%;
+						width: 110%;
+					}
+				}
+			}
+		}
+	}
+
+	.panel-3 {
+		.svg-wrapper-background svg {
+			height: 100vh;
+			display: block;
+		}
+	}
+	.panel-4 {
+		.figure-wrapper {
+			.svg-likes-wrapper {
+				height: 100vh;
+				display: flex;
+				justify-content: left;
+
+				svg {
+					position: absolute;
+					visibility: hidden;
+					max-width: 845px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+		}
+	}
+
+	.panel:nth-of-type(even) {
+		// background-color: rgb(0, 0, 0);
+		color: rgb(221, 221, 221);
+	}
+	.panel:nth-of-type(odd) {
+		// background-color: rgb(65 108 121);
+		color: rgb(239 242 244);
+	}
+
+	// contact
+	.panel:last-child {
+		.portrait {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+		}
+		.technology--header {
+			font-size: 35px;
+		}
+	}
+
+	//***** FONTS *****//
+	.panel-1 {
+		.article-inner-wrapper {
+			user-select: none;
+		}
+		h2.header-level1 {
+			font-weight: bolder;
+			font-style: normal;
+			text-transform: uppercase;
+			font-size: 50px;
+		}
+	}
+
+	.panel {
+		letter-spacing: 1.06px;
+		h2,
+		h3 {
+			font-family: "Days One", Arial, sans-serif;
+		}
+		h3.header-level1 {
+			font-size: 22px;
+		}
+		p {
+			font-size: 18px;
+			font-family: "SourceSansProBold", Arial, sans-serif;
+		}
+		h2.header-level2 {
+			font-size: 30px;
+			letter-spacing: 1.06px;
+			text-transform: uppercase;
+			font-weight: 600;
+			margin-top: 55px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+
+	.panel:not(.panel-1) h3.header-level2 {
+		font-size: 35px;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	// MEDIA QUERYS AND FONTS
+	@media screen and (min-width: 1201px) {
+		.panel.panel-1 {
+			header {
+				h2.header-level1 {
+					font-size: 80px;
+					width: 100%;
+				}
+			}
+		}
+		.panel {
+			&:not(.panel.panel-1) {
+				// padding-top: 30px;
+				h3.header-level2 {
+					font-size: 35px;
+					text-transform: uppercase;
+				}
+			}
+			h3.header-level1 {
+				font-size: 22px;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		.panel.panel-1 {
+			header {
+				h2.header-level1 {
+					font-size: 30px;
+					width: 100%;
+				}
+				h3.header-level1 {
+					display: none;
+				}
+			}
+		}
+		.panel {
+			h2.header-level1 {
+				font-size: 30px;
+			}
+			h3.header-level1 {
+				font-size: 25px;
+			}
+			.svg-figure {
+				padding-left: 35px;
+			}
+		}
+		.panel:not(.panel-1) {
+			padding-left: 10px;
+			padding-right: 10px;
+
+			h2.header-level1 {
+				width: 80%;
+			}
+		}
+		.panel-wrapper-level4 {
+			p {
+				display: none;
+			}
+		}
+		.panel .panel-wrapper-level3 .panel-wrapper-level4 {
+			padding-left: 10px;
+		}
+		.panel:last-child {
+			padding-left: 40px;
+			.panel--header {
+				display: none;
+			}
+			.portrait,
+			.explanation {
+				padding-top: 30px;
+			}
+		}
+	}
+	@media screen and (max-height: 800px) {
+		.panel-3#panel-3 {
+			.svg-wrapper-background {
+				width: auto;
+			}
+		}
+	}
+}

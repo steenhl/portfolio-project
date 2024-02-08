@@ -1,0 +1,62 @@
+@import "./variables";
+body {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	&.lock-scroll-bars {
+		overflow: hidden;
+		height: 100vh;
+		.home-wrapper nav.internal-nav.front-page {
+			z-index: -1;
+		}
+		.main-nav.navbar {
+			display: none;
+		}
+		#root,
+		#main-wrapper,
+		#main,
+		.home-wrapper,
+		.home-article-panel-wrapper {
+			overflow: hidden;
+			height: 100vh;
+		}
+	}
+}
+
+// .disktop .padding-to-top {
+// 	padding-top: $padding-top-var;
+// }
+.changePage.fadeOut {
+	background-color: antiquewhite;
+	position: "absolute";
+	width: "100vw";
+	height: "100vh";
+	opacity: 1;
+	figure {
+		//position: relative !important;
+	}
+}
+h1 {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: 45px;
+	padding: 5px;
+}
+.could-not-fetch-data {
+	display: flex;
+	// align-content: center;
+	justify-content: center;
+	h2 {
+		max-width: 400px;
+	}
+}
+#main-wrapper {
+	position: relative;
+}
+
+#main-footer {
+	height: 100vh;
+}
+@media screen and (max-width: 600px) {
+	body {
+		word-break: break-word;
+	}
+}

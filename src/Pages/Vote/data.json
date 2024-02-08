@@ -1,0 +1,22 @@
+{
+    "address": [
+      {
+        "_id": "1",
+        "contact": "Havnepladsen 50, 1234 Aarby"
+      }
+    ],
+    "mainText": [
+      {
+        "_id": "1",
+        "mainHeader": "Besøgsoplevelse",
+        "mainPragraf": "Hvordan var din kundeoplevelse i butikken i dag?"
+      }
+    ],
+    "vote": [
+      {
+        "_id": "1",
+        "name": "",
+        "color": ""
+      }
+    ]
+  }
